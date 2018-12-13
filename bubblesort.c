@@ -20,6 +20,7 @@ int main()
     printf("\n\n");
     printf("Maximalzahl der nötigen Vergleiche wäre (%d-1)*(%d-1) = %d\n", anz, anz, (anz-1)*(anz-1));
     printf("Verbesserte Version (pro Durchlauf 1 Vergleich weniger) wäre (%d + %d + %d + ... + 2 + 1 = %d\n", anz-1, anz-2, anz-3, (anz/2)*(1+anz));
+    
     printf("Tatsächlich benötigte Vergleiche (Ausstieg mit break wenn fertig sortiert) = %d\n", anzY);
     //zuerst int anzY (Funktion) Speicher geben (int anzY = 0;) dann im Bubble Sort deklarieren (int min = 0;), unten beim bubbleSort in der Sort-Schleife min++,
     //da zählt es jeden durchlauf ein "min" Wert dazu, dann return min; um den Wert zurück zu geben

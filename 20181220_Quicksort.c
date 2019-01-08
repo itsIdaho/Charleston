@@ -1,5 +1,5 @@
 int teile(int *x, int links, int rechts){
-    int i=links, j=rechts-1, pivot=x[rechts];
+    int i=links,int j=rechts-1,int pivot=x[rechts];
     int temp;
     do {
         while(x[i]<pivot && i<rechts-1){

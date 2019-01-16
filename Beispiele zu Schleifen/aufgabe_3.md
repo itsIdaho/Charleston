@@ -57,7 +57,7 @@ int sumArray(int *array, int length) {
 void differFromAvg(int * array, int length, int average) {
     int result = 0;
     for(int i = 0; i < length; i++) {
-        if((array[i]*0.8) > average || (array[i]*1.2) < average) {
+        if((array[i]*0.8) > average || (array[i]*1.2) < average) { /* || = oder */
             array[i] = average;
         }
         printf("%d ", array[i]);
@@ -72,7 +72,7 @@ int main() {
     printf("Array: \n");
     showArrayInConsole(numbers, length);
     int average = avgArray(numbers, length);
-    printf("\nArray without statistical outliers: \n");
+    printf("\nArray ohne Ausreißer: \n");
     differFromAvg(numbers, length, average);
     
     return 0;

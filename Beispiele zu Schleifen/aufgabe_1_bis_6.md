@@ -69,6 +69,21 @@ int min(int *array,int size)
     printf("%d", min);
 }
 
+int max(int *array, int size)
+{
+    printf("\nMaximum:\n");
+    int max = array[0];
+    
+    for(int i = 1; i < size; i++)
+    {
+        if(array[i] > max)
+        {
+            max = array[i];
+        }
+    }
+    printf("%d", max);
+}
+
 int main()
 {
     int size = 100; //gibt an wie viele Zahlen ausgegeben werden, hier 100
@@ -79,6 +94,7 @@ int main()
     ShowArrayReversed(array, size);
     NumSum(array, size);
     min(array, size);
+    max(array, size);
     
     int average = averageCalc(array, size);
     printf("%d", average);
